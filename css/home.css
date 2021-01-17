@@ -1,0 +1,13 @@
+#introduction{
+    margin-bottom: .5em;
+}
+
+#name {
+    font-size: 48pt;
+    margin-top: 0;
+    margin-bottom: .35em;
+}
+
+.link {
+    margin: 0.5em;
+}
