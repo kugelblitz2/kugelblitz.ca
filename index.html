@@ -2,10 +2,13 @@
 <html>
     <head>
         <title>Frank Tao</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/fontawesome.css">
+        <script src="script/autoscroll.js"></script>
+        <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
         <div class="page">
@@ -13,20 +16,20 @@
                 <p class="smoltext" id="introduction">Hello, I'm</p>
                 <h1 id="name">FRANK TAO</h1>
                 <nav id="hnav">
-                    <a class="link" href="aboutme/"> <i class="fas fa-id-card-alt"></i> about me </a>
+                    <a class="link" href="aboutme/"> <i class="fas fa-id-badge"></i> about me </a>
                     <a class="link" href="resume.pdf"> <i class="fas fa-file-alt"></i> résumé</a>
                     <a class="link" href="https://www.github.com/kugelblitz2"> <i class="fab fa-github"></i> github</a>
                 </nav>
             </div>
-            <div class="content bottom">
+            <div class="content bottom" onclick="scrollDown(1)">
                 <p class="smoltext">More Stuff</p>
                 <i class="fas fa-chevron-down"></i>
             </div>
         </div>
         <div class="rule"></div>
         <div class="page">
-            <div class="content top">
-                <h1>Links</h1>
+            <div class="content top" onclick="scrollDown(-1)">
+                <h1 id="links">Links</h1>
                 <nav id=morelinks>
                     <a id="apt" href="https://apt.kugelblitz.ca/">Debian Repository</a>
                 </nav>
