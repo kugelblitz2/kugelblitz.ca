@@ -1,8 +1,10 @@
+/* main/text colors are set in main.js */
+
 html{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  background-color: #f9f9f9;
-  color: #444444;
+  background-color: var(--maincolor);
+  color: var(--textcolor);
   font-family: "D-DIN";
 }
 
@@ -27,7 +29,7 @@ table {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #444444;
+  background: var(--textcolor);
   border-radius: 5px;
 }
 
@@ -69,7 +71,7 @@ table {
 
 .rule {
   height: 1px;
-  background-color: #444444;
+  background-color: var(--textcolor);
 }
 
 /* Navigation arrow layout */
