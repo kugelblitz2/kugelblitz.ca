@@ -1,0 +1,35 @@
+#title {
+    font-size: 32pt;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+}
+
+#directory {
+    color: cadetblue;
+}
+
+#packagelist {
+    width: 40em;
+}
+
+#howtouse{
+    margin-bottom: .75em;
+}
+
+.toptext {
+    margin-top: 1em;
+    margin-bottom: .2em;
+}
+
+.bottomtext {
+    margin-top: .2em;
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 12pt;
+}
