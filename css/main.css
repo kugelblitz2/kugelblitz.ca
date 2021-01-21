@@ -69,11 +69,6 @@ table {
   margin-bottom: 0;
 }
 
-.rule {
-  height: 1px;
-  background-color: var(--textcolor);
-}
-
 /* Navigation arrow layout */
 .fa-chevron-up, .fa-chevron-down {
   margin: 1em;
