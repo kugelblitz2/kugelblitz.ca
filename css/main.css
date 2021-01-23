@@ -73,3 +73,8 @@ table {
 .fa-chevron-up, .fa-chevron-down {
   margin: 1em;
 }
+
+/* Slightly bigger h1 */
+.bigh1 {
+  font-size: 32pt;
+}
