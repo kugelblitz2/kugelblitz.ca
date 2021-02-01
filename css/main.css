@@ -1,6 +1,6 @@
 /* main/text colors are set in main.js */
 
-html{
+html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   background-color: var(--maincolor);
@@ -8,10 +8,16 @@ html{
   font-family: "D-DIN";
 }
 
-body{
+body {
   scroll-snap-type: y mandatory;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+p {
+  line-height: 135%;
+  width:60%;
+  margin: auto;
 }
 
 a {
