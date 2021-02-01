@@ -14,10 +14,21 @@
 			<div class="content center">
                 <h1>About Me</h1>
                 <p id="aboutme">i eat glue</p>
-			</div>
+            </div>
+            <div class="content bottom" onclick="scrollDown(1)">
+                <p class="smoltext">More Stuff</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
         <div class="rule"></div>
         <div class="page">
+            <div class="content top">
+                <i class="fas fa-chevron-up" onclick="scrollDown(-1)"></i>
+                <h1 class="bigh1" id="links">Links</h1>
+                <nav id=morelinks>
+                    <a id="apt" href="/apt/">Debian Repository</a>
+                </nav>
+            </div>
             <div class="content center">
                 <h1>My Hardware</h1>
                 <p id="hardware">a literal potato</p>
