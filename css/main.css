@@ -62,7 +62,7 @@ table {
   position: absolute;
   width: 100vw;
   bottom: 50%;
-  transform: translateY(25%);
+  transform: translateY(35%);
 }
 
 .bottom {
