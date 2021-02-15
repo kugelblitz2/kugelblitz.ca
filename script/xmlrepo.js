@@ -1,36 +1,38 @@
 var listpath = document.getElementById('paclistpath').getAttribute('content');
-var listcontent;
 fetch (listpath)
 .then(x => x.text())
-.then(y => listcontent = y);
+.then(y => document.getElementById('listcontent').setAttribute('content', y));
 
 parser = new DOMParser();
-repolist = parser.parseFromString(listcontent, 'text/xml');
+repolist = parser.parseFromString(document.getElementById('listcontent').getAttribute('content'), 'text/xml');
 
 var listElement = document.getElementById('paclist');
 var packageQuantity = repolist.getElementsByTagName("repo")[0].childElementCount;
 for(var i = 0; i < packageQuantity; i++){
-    var package = document.createElement('tr');
-
     var suite = document.createElement('td');
     suite.appendChild(document.createTextNode(
         repolist.getElementsByTagName('suite')[i].childNodes[0].nodeValue));
 
-    var component;
-    suite.appendChild(document.createTextNode(
+    var component = document.createElement('td');
+    component.appendChild(document.createTextNode(
         repolist.getElementsByTagName('component')[i].childNodes[0].nodeValue));
 
-    var arch;
-    suite.appendChild(document.createTextNode(
+    var arch = document.createElement('td');
+    arch.appendChild(document.createTextNode(
         repolist.getElementsByTagName('arch')[i].childNodes[0].nodeValue));
     
-    var name;
-    suite.appendChild(document.createTextNode(
+    var pacname = document.createElement('td');
+    pacname.appendChild(document.createTextNode(
         repolist.getElementsByTagName('name')[i].childNodes[0].nodeValue));
     
-    var version;
-    suite.appendChild(document.createTextNode(
+    var version = document.createElement('td');
+    version.appendChild(document.createTextNode(
         repolist.getElementsByTagName('version')[i].childNodes[0].nodeValue));
     
+    package.appendChild(suite);
+    package.appendChild(component);
+    package.appendChild(arch);
+    package.appendChild(pacname);
+    package.appendChild(version);
     listElement.appendChild(package);
 }
