@@ -8,7 +8,7 @@ parser = new DOMParser();
 repolist = parser.parseFromString(listcontent, 'text/xml');
 
 var listElement = document.getElementById('paclist');
-var packageQuantity = repolist.getElementByTagName("repo")[0].childElementCount;
+var packageQuantity = repolist.getElementsByTagName("repo")[0].childElementCount;
 for(var i = 0; i < packageQuantity; i++){
     var package = document.createElement('tr');
 
