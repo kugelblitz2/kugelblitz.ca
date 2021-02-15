@@ -1,4 +1,4 @@
-var listpath = document.getElementById('paclistpath');
+var listpath = document.getElementById('paclistpath').innerHTML;
 var listcontent;
 fetch (listpath)
 .then(x => x.text())
