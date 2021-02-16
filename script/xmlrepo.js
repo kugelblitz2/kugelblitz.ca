@@ -1,13 +1,16 @@
-var listpath = document.getElementById('paclistpath').getAttribute('content');
-fetch (listpath)
-.then(x => x.text())
-.then(y => document.getElementById('listcontent').setAttribute('content', y));
+function getXML() {
+    var listpath = document.getElementById('paclistpath').getAttribute('content');
+    fetch (listpath)
+    .then(x => x.text())
+    .then(y => document.getElementById('listcontent').setAttribute('content', y));
+}
 
+getXML();
 parser = new DOMParser();
 repolist = parser.parseFromString(document.getElementById('listcontent').getAttribute('content'), 'text/xml');
 
 var listElement = document.getElementById('paclist');
-var packageQuantity = repolist.getElementsByTagName("repo")[0].childElementCount;
+var packageQuantity = repolist.getElementsByTagName('repo')[0].childElementCount;
 for(var i = 0; i < packageQuantity; i++){
     var suite = document.createElement('td');
     suite.appendChild(document.createTextNode(
