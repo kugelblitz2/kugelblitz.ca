@@ -4,4 +4,4 @@ fetch ('/aboutme/selfdescription')
 
 fetch ('/aboutme/hardware')
 .then(x => x.text())
-.then(y => document.getElementById('hardwarelist').innerHTML = y);
+.then(y => document.getElementById('listbody').innerHTML = y);
