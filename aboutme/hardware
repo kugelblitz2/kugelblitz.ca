@@ -1,5 +1,5 @@
-"Elucidator" - macOS Catalina<br>
-AMD Ryzen 3300X<br>
+"Elucidator" - GNU/Debian Buster & macOS Catalina<br>
+AMD Ryzen 7 3700X<br>
 AMD Radeon RX580 4GB<br>
 NVIDIA GT 710 1GB (VFIO Passthrough)<br>
 16GB DDR4 @ 3600MHz<br>
@@ -14,4 +14,4 @@ Logitech G502 Hero SE<br>
 MacbookPro14,1 "Dark Repulser" - macOS Big Sur<br>
 Thinkpad T430s "Venuzdnor" - GNU/Debian Buster<br>
 <br>
-Atomic Pi (server) "Skylab II" - GNU/Debian Buster<br>
+ASUS Chromebox CN60 (server) "Night Sky" - GNU/Debian Bullseye<br>
