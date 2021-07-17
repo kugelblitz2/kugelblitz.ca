@@ -2,8 +2,8 @@
 AMD Ryzen 7 3700X<br>
 AMD Radeon RX580 4GB<br>
 NVIDIA GT 710 1GB (VFIO Passthrough)<br>
-16GB DDR4 @ 3600MHz<br>
-ASRock B450M Pro4<br>
+16GB DDR4-3600 CL17 OC to 3933MHz<br>
+ASRock B550 Phantom Gaming 4<br>
 Samsung 970 Evo Plus 500GB<br>
 Crucial MX500 500GB<br>
 <br>
@@ -12,6 +12,6 @@ Logitech G513 (Kalih Brown switches)<br>
 Logitech G502 Hero SE<br>
 <br>
 MacbookPro14,1 "Dark Repulser" - macOS Big Sur<br>
-Thinkpad T430s "Venuzdnor" - GNU/Debian Buster<br>
+Thinkpad T430s "Venuzdnor" - GNU/Debian Bullseye<br>
 <br>
 ASUS Chromebox CN60 (server) "Night Sky" - GNU/Debian Bullseye<br>
